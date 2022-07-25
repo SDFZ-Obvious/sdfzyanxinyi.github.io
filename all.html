@@ -1,13 +1,11 @@
 ---
+title: All
 layout: page
-description: "不要死鸡应背，要把院里搞明白"
+description: "仰天大笑出门去，我辈就是蓬蒿人"
 ---
 
 {% for post in site.posts %}
     {% if post.istop != true %}
-        {% continue %}
-    {% endif %}
-    {% if post.show != true %}
         {% continue %}
     {% endif %}
 <div class="post-preview">
@@ -37,9 +35,6 @@ description: "不要死鸡应背，要把院里搞明白"
 
 {% for post in site.posts %}
     {% if post.istop == true %}
-        {% continue %}
-    {% endif %}
-    {% if post.show != true %}
         {% continue %}
     {% endif %}
 <div class="post-preview">
