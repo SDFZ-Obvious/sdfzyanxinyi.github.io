@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
 <!-- Post Header -->
@@ -49,33 +51,6 @@ layout: default
                     </div>
                 </div>
                 <!-- disqus 评论框 end -->
-                {% endif %}
-
-                <!-- Gitalk -->
-                {% if site.gitalk_enable == true %}
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-                <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-
-                <div id="gitalk-container"></div>
-
-                <script>
-                var temp = new Array()
-                {% for a in site.gitalk_admin %}
-                    temp.push('{{ a }}')
-                {% endfor %}
-
-                var gitalk = new Gitalk({
-                  clientID: '{{ site.gitalk_client_id }}',
-                  clientSecret: '{{ site.gitalk_client_secret }}',
-                  repo: '{{ site.gitalk_repo }}',
-                  owner: '{{ site.gitalk_owner }}',
-                  admin: temp,
-                  id: location.pathname,      // Ensure uniqueness and length less than 50
-                  distractionFreeMode: false  // Facebook-like distraction free mode
-                })
-
-                gitalk.render('gitalk-container')
-                </script>
                 {% endif %}
 
             </div>

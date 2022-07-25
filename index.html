@@ -1,15 +1,9 @@
 ---
 layout: page
-description: "不要死鸡应背，要把院里搞明白"
+description: "「离开世界之前 一切都是过程」"
 ---
 
-{% for post in site.posts %}
-    {% if post.istop != true %}
-        {% continue %}
-    {% endif %}
-    {% if post.show != true %}
-        {% continue %}
-    {% endif %}
+{% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -35,39 +29,7 @@ description: "不要死鸡应背，要把院里搞明白"
 <hr>
 {% endfor %}
 
-{% for post in site.posts %}
-    {% if post.istop == true %}
-        {% continue %}
-    {% endif %}
-    {% if post.show != true %}
-        {% continue %}
-    {% endif %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:200 }}
-            {% endif %}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
-
-<!-- Pager 
+<!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
@@ -82,4 +44,3 @@ description: "不要死鸡应背，要把院里搞明白"
     {% endif %}
 </ul>
 {% endif %}
--->

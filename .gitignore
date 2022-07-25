@@ -11,4 +11,3 @@ node_modules
 .jekyll-cache
 */.DS_Store
 */*/.DS_Store
-*.bat
