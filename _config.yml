@@ -13,7 +13,7 @@ future: false
 
 # SNS settings
 RSS: false
-github_username: ShanLunjiaJian
+github_username: sdfzyanxinyi
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -68,7 +68,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "把院里搞明白OIers"
+sidebar-about-description: "把院里搞明白"
 sidebar-avatar: /img/photo.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -94,9 +94,24 @@ page-mathjax: true
 
 friends: [
     {
-        title: "fireinice",
-        href: "https://www.jianshu.com/u/91bc345f7c84"
-    }
+        title: "在线LaTeX",
+        href: "https://www.latexlive.com/"
+    },{
+        title: "图论",
+        href: "https://csacademy.com/app/graph_editor/"
+    },{
+        title: "图论复杂",
+        href: "https://dreampuf.github.io/GraphvizOnline/"
+    },{
+        title: "文本保存",
+        href: "https://txtpad.cn"
+    },{
+        title: "Desmos",
+        href: "https://www.desmos.com/calculator?lang=zh-CN"
+    },{
+        title: "数学画板",
+        href: "https://www.geogebra.org/"
+    },
 ]
 
 gitalk_enable: true
