@@ -1,6 +1,6 @@
 # Site settings
-title: Crathu Blog
-SEOTitle: 闫辛祎的博客 | Crathru Blog
+title: sdfz_yanxinyi Blog
+SEOTitle: 闫辛祎的博客 | sdfz_yanxinyi Blog
 header-img: img/bg.png
 email: 1508230297@qq.com
 description: "关于前端开发，OI，c++ | 闫辛祎，florr，OIer | 这里是 @Crathu闫辛祎 的个人博客，与你一起发现更大的世界。"
@@ -75,8 +75,8 @@ ga_domain: sdfzyanxinyi.github.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "闫辛祎 OIer，把院里搞明白 <br> QingHe Dev Team"
-sidebar-avatar: /img/photo.png  # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "闫辛祎 <br> OIer，把院里搞明白 <br> QingHe Dev Team"
+sidebar-avatar: /img/photo.jpg  # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
